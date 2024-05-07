@@ -2,7 +2,7 @@
 const currentPage = window.location.pathname;
 const pageNames = {
   '/': 'home',
-  '/posts/post.html': 'posts',
+  '/projects/projects.html': 'projects',
   '/about/about.html': 'about',
   '/posts/blog1.html': 'welcome'
 };
