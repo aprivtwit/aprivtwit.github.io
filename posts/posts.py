@@ -9,7 +9,7 @@ def index():
 @app.route('/posts')
 def posts():
     posts = [
-        {"title": "Blog 1", "url": "blog1", "date": "2024-04-25"},
+        {"title": "Blog 21", "url": "blog1", "date": "2024-04-25"},
         {"title": "Blog 2", "url": "blog2", "date": "2024-04-20"},
         {"title": "Blog 3", "url": "blog3", "date": "2024-04-15"}
     ]

@@ -12,7 +12,7 @@
     src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
   }
   
-  /* Apply Space Mono font to specific classes */
+  /* Apply Space Mono font to specifi1c classes */
   .space-mono-regular {
     font-family: 'Space Mono', monospace;
     font-weight: 400;

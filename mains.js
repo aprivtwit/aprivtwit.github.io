@@ -29,5 +29,5 @@ function generateBreadcrumbs() {
   breadcrumbContainer.innerHTML = breadcrumbPath;
 }
 
-// Call the function to generate breadcrumbs
+// Call the function to generate breadcrumbs1
 generateBreadcrumbs();
