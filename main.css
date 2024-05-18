@@ -1,152 +1,127 @@
-/* Define Space Mono font styles1 */
-@font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Space Mono Regular'), local('SpaceMono-Regular'), url(path/to/space-mono-regular.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
-}
-
-/* Apply Space Mono font to specific classes */
-.space-mono-regular {
-  font-family: 'Space Mono', monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.space-mono-bold {
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.space-mono-regular-italic {
-  font-family: 'Space Mono', monospace;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.space-mono-bold-italic {
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  font-style: italic;
-}
-
-/* General styling */
 body {
-  
-  overflow-x: hidden;
-  background-color: black;
-  color: white;
-  font-family: 'Space Mono', monospace; /* Apply Space Mono font to the entire document */
-  font-weight: 300;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   margin: 0;
-  padding-top: 7em;
-  padding-left: 17em;
+  font-family: 'Intern', sans-serif;
+  background-color: #0d0d0d;
+  color: #fffefe;
+  background: linear-gradient(135 deg, rgba(0, 0, 0, 0.8), rgba(75, 0, 130, 0.4))
 }
 
-
-.xdot-com {
-
-  margin: 0 0.38em;
-  padding-top: 2em;
-  font-size: 0.8em;
-  text-decoration: underline;
-  text-decoration-thickness: 0.2px; /* Adjust the thickness as needed */
-  text-decoration-color: #ffffff; /* Set the color of the underline */
-  text-decoration-style: solid; /* Set the style of the underline (solid, dotted, dashed, etc.) */
-  text-underline-offset: 2px;
+.gradient-text {
+  background: linear-gradient(to right, #92d842, hsl(201, 66%, 52%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-
-
-
 
 .container {
-  max-width: 400px;
-  width: 100%;
-  padding: 1em;
-  padding-top: 10px;
-}
-
-header {
   display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 1em 10em;
-  margin-bottom: 5px;
-  padding-left: 0px;
+  flex-direction: row;
+  height: 100vh;
 }
 
-header a {
-  color: #6be060;
-  text-decoration: none;
-  margin: 0 0.5em;
-  font-size: 1em;
-  font-weight: bold;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Space Mono';
-  font-weight: 700;
-  font-size: 15px;
-  
-
-}
-
-main {
-  flex-grow: 1;
+.left-panel {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 0.8em;
+  align-items: flex-start;
+  padding: 70px;
+  background-color: #010012;
 }
 
-h1 span {
-  color: #b36fff;
-  font-size: 0.9em;
+.right-panel {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #010012;
 }
 
-.lolxd {
-  
-  display: inline-block;
-  margin: 0 0.4em;
-  overflow-wrap: break-word;
-  font-family: 'Space Mono';
-  font-weight: 700;
-  font-size: 20px;
-  color: #FFFFFF;
+.logo-top-left {
+  position: absolute;
+  top: 20px;
+  left: 300px;
 }
 
-.breadcrumbs {
-  background-color: #000000;
-  padding: 10px;
-  margin-bottom: 10px;
+.logo-top-left img {
+  width: 225px; 
+  height: auto;
 }
 
-.breadcrumbs a {
+.logo-middle-left {
+  margin-top: -190px;
+  margin-left: 300px;
+  font-size: 1.75em;
+}
+
+.tagline {
+  margin-left: 300px;
+  margin-bottom: 45px;
+  text-align: left;
+  font-size: 1em;
+  color: #d3d3dd;
+  line-height: 1.66;
+}
+
+.buttons-container {
+  display: flex; /* Use flexbox to place buttons side by side */
+  margin-left: 300px;
+  gap: 10px; /* Adjust gap between buttons */
+  margin-bottom: 20px;
+}
+
+.button-1 a {
+  padding: 10px 20px;
+  background-color: #2eb84b;
+  color: white;
   text-decoration: none;
-  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
 }
 
-.breadcrumbs a:hover {
-  text-decoration: underline;
+.button-2 a {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
 }
 
-/* Change the text color of breadcrumbs */
-.breadcrumbs {
-  color: #7460E0; /* Change to the color you desire */
+.button-1 a:hover, .button-2 a:hover {
+  background-color: #e7e9e7;
+  color: black;
 }
 
-/* Change the link color of breadcrumbs */
-.breadcrumbs a {
-  color: #7460E0; /* Change to the color you desire */
+.demo-image {
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.launchlist-form {
+  margin-top: 20px;
+}
+
+.launchlist-form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.launchlist-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.launchlist-form button:hover {
+  background-color: #45a049;
 }
